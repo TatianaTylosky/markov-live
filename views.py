@@ -1,10 +1,18 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import markov
 
 app = Flask(__name__)
 
-@app.route("/")
-def markov_result():
+@app.route("/", methods=['GET', 'POST'])
+def input():
+    if request.method == 'POST':
+        # session['username'] = request.form['username']
+        input = request.form['input']
+        print "POST"
+        return "the actual input"
+    return "input function ran"
+
+def output():
 	# import ipdb; ipdb.set_trace()
 	foo = markov.main()
 	#print my_string
