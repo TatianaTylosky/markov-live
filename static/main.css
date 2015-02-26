@@ -1,0 +1,43 @@
+body {
+    background-color: aliceblue;
+}
+
+textarea {
+    padding: 5px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    display: inline-block;
+    margin: 30px;
+    border: 0px;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 100px;
+    font-family: "Helvetica Neue";
+    padding: 10px;
+    margin: 0px;
+}
+
+button {
+    border: solid 5px darkorange;
+    background-color: darkorange;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    display: block;
+    margin-right: 50%;
+    margin-left: 215px;
+    width: 100px;
+    position: relative;
+    right: 50px;
+}
+
+button:hover {
+    border: solid 5px orange;
+    background-color: white;
+    color: darksalmon;
+    font-size: 30px;
+    font-family: Arial;
