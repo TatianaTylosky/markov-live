@@ -32,7 +32,7 @@ def generate(chain):
     seed = random.choice(chain.keys())
     final_words = []
 
-    for new_words in range(500):
+    for new_words in range(100):
 
         if seed not in chain:
             break

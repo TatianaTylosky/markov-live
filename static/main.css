@@ -2,7 +2,9 @@ body {
     background-color: aliceblue;
 }
 
-textarea {
+textarea,
+input {
+    vertical-align: top;
     padding: 5px;
     width: 400px;
     height: 400px;
