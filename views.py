@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import markov
 
-app = Flask(__name__)
+views = Flask(__name__)
 
 @app.route("/", methods=['GET'])
 def landing_page():
