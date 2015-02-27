@@ -9,13 +9,18 @@
 </head>
 
 <body>
-    <h1>Markov Chain</h1>
+    <h1>Markov Chain</h1><h2>By <a href="http://tati.nyc/">Tatiana Tylosky</a></h2>
     <form action="{{ url_for('submit') }}" method="post">
-        <textarea name="input" class="input_box"></textarea>
-
-        <textarea class="output_box">{{my_string}}</textarea>
+        <div class="box">
+            <h3>INPUT</h3>
+            <textarea name="input" class="input_box">Put some seed text here (the more the merrier). You should even try using multiple sources! No but really. Like go to www.gutenberg.org and go crazy. </textarea>
+        </div>
+        <div class="box">
+            <h3>OUTPUT</h3>
+            <textarea class="output_box">{{my_string}}</textarea>
+        </div>
         
-        <button type="submit" name="name" id="button">GO!</button>
+        <button type="submit" name="name" id="button">LOLZ</button>
     </form>
 </body>
 </html>

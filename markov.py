@@ -2,16 +2,22 @@ import random
 import codecs
 import unicodedata
 
-def text_to_array():
-    with codecs.open ("test_text.txt", encoding='utf-8') as myfile:
-        data=myfile.read().replace('\n', ' ')
-        words = data.split()
+# def text_to_array():
+#     with codecs.open ("test_text.txt", encoding='utf-8') as myfile:
+#         data=myfile.read().replace('\n', ' ')
+#         words = data.split()
 
+#     return words
+
+def text_to_array(input):
+    data = str(input)
+    data = data.replace('\n', ' ')
+    words = data.split()
     return words
 
-def make_lowercase(words):
-    lowercase_words = [word.lower() for word in words]
-    return lowercase_words
+# def make_lowercase(words):
+#     lowercase_words = [word.lower() for word in words]
+#     return lowercase_words
 
 def make_chain(words): 
     chain = {}
@@ -44,10 +50,10 @@ def generate(chain):
     final = " ".join(final_words)
     return final
 
-def main():
-    words = text_to_array()
-    lowercase_words = make_lowercase(words)
-    chain = make_chain(lowercase_words)
+def main(input):
+    words = text_to_array(input)
+    # lowercase_words = make_lowercase(words)
+    chain = make_chain(words)
     final = generate(chain)
     return final #unicodedata.normalize('NFKD', u'{}'.format(final.decode('utf-8').encode('utf-8'))).encode('ASCII', 'ignore')
 # generate(chain)

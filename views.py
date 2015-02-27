@@ -9,11 +9,10 @@ def landing_page():
 
 @app.route("/", methods=['POST'])
 def submit():
-    foo = ""
     their_input = request.form['input']
     print "POST"
     # print their_input
-    foo = markov.main()
+    foo = markov.main(their_input)
     return render_template('template.html', my_string=foo)
     # return my_string
 

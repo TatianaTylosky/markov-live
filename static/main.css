@@ -1,19 +1,34 @@
 body {
     background-color: aliceblue;
+    text-align: center;
 }
 
 textarea,
 input {
-    vertical-align: top;
-    padding: 5px;
     width: 400px;
     height: 400px;
     background-color: white;
     display: inline-block;
-    margin: 30px;
     border: 0px;
+    margin: 0;
+    padding: 0;
     font-size: 20px;
     font-family: Arial;
+}
+
+input:focus { 
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+.box {
+    vertical-align: top;
+    padding: 0;
+    width: 450px;
+    height: 450px;
+    display: inline-block;
+    margin: 0;
+/*    background-color: darksalmon;*/
 }
 
 h1 {
@@ -21,6 +36,41 @@ h1 {
     font-family: "Helvetica Neue";
     padding: 10px;
     margin: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "Helvetica Neue";
+    padding: 10px;
+    margin: 0px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: "Helvetica Neue";
+    padding: 0;
+    margin: 0;
+    vertical-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 button {
@@ -30,11 +80,10 @@ button {
     font-size: 30px;
     font-family: Arial;
     display: block;
-    margin-right: 50%;
-    margin-left: 215px;
-    width: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100px;
     position: relative;
-    right: 50px;
 }
 
 button:hover {
